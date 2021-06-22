@@ -1,5 +1,5 @@
-import '../styles/globals.css'
-import Link from 'next/link'
+import "../styles/globals.css";
+import Link from "next/link";
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -15,10 +15,15 @@ function MyApp({ Component, pageProps }) {
             <p>Profile</p>
           </a>
         </Link>
+        <Link href="/protected">
+          <a className="text-base leading-6 font-medium hover:text-gray-600 transition-colors duration-200 py-2 ml-10">
+            <p>Protected</p>
+          </a>
+        </Link>
       </nav>
       <Component {...pageProps} />
     </div>
-  )
+  );
 }
 
-export default MyApp
+export default MyApp;

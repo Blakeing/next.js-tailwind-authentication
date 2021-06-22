@@ -1,6 +1,6 @@
 {
   "auth": {
-    "tailwindauth0a2d4345": {
+    "nexttwamped94038c14": {
       "service": "Cognito",
       "providerPlugin": "awscloudformation",
       "dependsOn": [],

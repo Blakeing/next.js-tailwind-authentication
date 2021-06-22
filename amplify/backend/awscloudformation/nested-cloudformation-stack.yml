@@ -68,15 +68,15 @@
         }
       }
     },
-    "authtailwindauth0a2d4345": {
+    "authnexttwamped94038c14": {
       "Type": "AWS::CloudFormation::Stack",
       "Properties": {
-        "TemplateURL": "https://s3.amazonaws.com/amplify-tailwindauth-dev-162937-deployment/amplify-cfn-templates/auth/tailwindauth0a2d4345-cloudformation-template.yml",
+        "TemplateURL": "https://s3.amazonaws.com/amplify-nexttwamped-dev-155044-deployment/amplify-cfn-templates/auth/nexttwamped94038c14-cloudformation-template.yml",
         "Parameters": {
-          "identityPoolName": "tailwindauth0a2d4345_identitypool_0a2d4345",
+          "identityPoolName": "nexttwamped94038c14_identitypool_94038c14",
           "allowUnauthenticatedIdentities": false,
-          "resourceNameTruncated": "tailwi0a2d4345",
-          "userPoolName": "tailwindauth0a2d4345_userpool_0a2d4345",
+          "resourceNameTruncated": "nexttw94038c14",
+          "userPoolName": "nexttwamped94038c14_userpool_94038c14",
           "autoVerifiedAttributes": "email",
           "mfaConfiguration": "OFF",
           "mfaTypes": "SMS Text Message",
@@ -88,14 +88,14 @@
           "passwordPolicyMinLength": 8,
           "passwordPolicyCharacters": "",
           "requiredAttributes": "email",
-          "userpoolClientGenerateSecret": true,
+          "userpoolClientGenerateSecret": false,
           "userpoolClientRefreshTokenValidity": 30,
           "userpoolClientWriteAttributes": "email",
           "userpoolClientReadAttributes": "email",
-          "userpoolClientLambdaRole": "tailwi0a2d4345_userpoolclient_lambda_role",
+          "userpoolClientLambdaRole": "nexttw94038c14_userpoolclient_lambda_role",
           "userpoolClientSetAttributes": false,
-          "sharedId": "0a2d4345",
-          "resourceName": "tailwindauth0a2d4345",
+          "sharedId": "94038c14",
+          "resourceName": "nexttwamped94038c14",
           "authSelections": "identityPoolAndUserPool",
           "authRoleArn": {
             "Fn::GetAtt": [
@@ -110,17 +110,17 @@
             ]
           },
           "useDefault": "defaultSocial",
+          "hostedUI": true,
           "usernameAttributes": "email",
+          "hostedUIDomainName": "nexttwamped94038c14-94038c14",
+          "authProvidersUserPool": "Google",
+          "hostedUIProviderMeta": "[{\"ProviderName\":\"Google\",\"authorize_scopes\":\"openid email profile\",\"AttributeMapping\":{\"email\":\"email\",\"username\":\"sub\"}}]",
+          "oAuthMetadata": "{\"AllowedOAuthFlows\":[\"code\"],\"AllowedOAuthScopes\":[\"phone\",\"email\",\"openid\",\"profile\",\"aws.cognito.signin.user.admin\"],\"CallbackURLs\":[\"http://localhost:3000/\"],\"LogoutURLs\":[\"http://localhost:3000/\"]}",
           "userPoolGroupList": "",
           "serviceName": "Cognito",
           "usernameCaseSensitive": false,
           "dependsOn": "",
-          "hostedUI": true,
-          "hostedUIDomainName": "tailwindauth4cf825c5-4cf825c5",
-          "authProvidersUserPool": "Facebook,Google",
-          "hostedUIProviderMeta": "[{\"ProviderName\":\"Facebook\",\"authorize_scopes\":\"email,public_profile\",\"AttributeMapping\":{\"email\":\"email\",\"username\":\"id\"}},{\"ProviderName\":\"Google\",\"authorize_scopes\":\"openid email profile\",\"AttributeMapping\":{\"email\":\"email\",\"username\":\"sub\"}}]",
-          "oAuthMetadata": "{\"AllowedOAuthFlows\":[\"code\"],\"AllowedOAuthScopes\":[\"phone\",\"email\",\"openid\",\"profile\",\"aws.cognito.signin.user.admin\"],\"CallbackURLs\":[\"http://localhost:3000/profile/\"],\"LogoutURLs\":[\"http://localhost:3000/profile/\"]}",
-          "hostedUIProviderCreds": "[]",
+          "hostedUIProviderCreds": "[{\"ProviderName\":\"Google\",\"client_id\":\"535362882531-rloppjdqr40m9hr9lfg5p53ofd9l9nq0.apps.googleusercontent.com\",\"client_secret\":\"YHLe2UxMp0EXnFwosbuOL9-E\"}]",
           "env": "dev"
         }
       }
@@ -129,7 +129,7 @@
       "DependsOn": [
         "AuthRole",
         "UnauthRole",
-        "authtailwindauth0a2d4345"
+        "authnexttwamped94038c14"
       ],
       "Type": "AWS::Lambda::Function",
       "Properties": {
@@ -188,7 +188,7 @@
           }
         },
         "Handler": "index.handler",
-        "Runtime": "nodejs10.x",
+        "Runtime": "nodejs12.x",
         "Timeout": "300",
         "Role": {
           "Fn::GetAtt": [
@@ -212,7 +212,7 @@
         },
         "idpId": {
           "Fn::GetAtt": [
-            "authtailwindauth0a2d4345",
+            "authnexttwamped94038c14",
             "Outputs.IdentityPoolId"
           ]
         },

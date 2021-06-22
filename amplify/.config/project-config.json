@@ -1,6 +1,6 @@
 {
-  "projectName": "tailwindauth",
-  "version": "3.0",
+  "projectName": "nexttwamped",
+  "version": "3.1",
   "frontend": "javascript",
   "javascript": {
     "framework": "react",

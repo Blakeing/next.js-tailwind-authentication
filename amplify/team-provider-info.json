@@ -1,19 +1,19 @@
 {
   "dev": {
     "awscloudformation": {
-      "AuthRoleName": "amplify-tailwindauth-dev-162937-authRole",
-      "UnauthRoleArn": "arn:aws:iam::557458351015:role/amplify-tailwindauth-dev-162937-unauthRole",
-      "AuthRoleArn": "arn:aws:iam::557458351015:role/amplify-tailwindauth-dev-162937-authRole",
-      "Region": "us-east-1",
-      "DeploymentBucketName": "amplify-tailwindauth-dev-162937-deployment",
-      "UnauthRoleName": "amplify-tailwindauth-dev-162937-unauthRole",
-      "StackName": "amplify-tailwindauth-dev-162937",
-      "StackId": "arn:aws:cloudformation:us-east-1:557458351015:stack/amplify-tailwindauth-dev-162937/51446780-5d01-11eb-9ac3-0a6046b66d41",
-      "AmplifyAppId": "d3l292lxfelsd0"
+      "AuthRoleName": "amplify-nexttwamped-dev-155044-authRole",
+      "UnauthRoleArn": "arn:aws:iam::794916265443:role/amplify-nexttwamped-dev-155044-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::794916265443:role/amplify-nexttwamped-dev-155044-authRole",
+      "Region": "us-east-2",
+      "DeploymentBucketName": "amplify-nexttwamped-dev-155044-deployment",
+      "UnauthRoleName": "amplify-nexttwamped-dev-155044-unauthRole",
+      "StackName": "amplify-nexttwamped-dev-155044",
+      "StackId": "arn:aws:cloudformation:us-east-2:794916265443:stack/amplify-nexttwamped-dev-155044/8a1f97d0-d39b-11eb-95d8-0a4b7596b37e",
+      "AmplifyAppId": "d4gvhglp9nhh0"
     },
     "categories": {
       "auth": {
-        "tailwindauth0a2d4345": {}
+        "nexttwamped94038c14": {}
       }
     }
   }

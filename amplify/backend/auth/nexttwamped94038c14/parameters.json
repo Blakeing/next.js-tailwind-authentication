@@ -1,8 +1,8 @@
 {
-    "identityPoolName": "tailwindauth0a2d4345_identitypool_0a2d4345",
+    "identityPoolName": "nexttwamped94038c14_identitypool_94038c14",
     "allowUnauthenticatedIdentities": false,
-    "resourceNameTruncated": "tailwi0a2d4345",
-    "userPoolName": "tailwindauth0a2d4345_userpool_0a2d4345",
+    "resourceNameTruncated": "nexttw94038c14",
+    "userPoolName": "nexttwamped94038c14_userpool_94038c14",
     "autoVerifiedAttributes": [
         "email"
     ],
@@ -20,7 +20,7 @@
     "requiredAttributes": [
         "email"
     ],
-    "userpoolClientGenerateSecret": true,
+    "userpoolClientGenerateSecret": false,
     "userpoolClientRefreshTokenValidity": 30,
     "userpoolClientWriteAttributes": [
         "email"
@@ -28,10 +28,10 @@
     "userpoolClientReadAttributes": [
         "email"
     ],
-    "userpoolClientLambdaRole": "tailwi0a2d4345_userpoolclient_lambda_role",
+    "userpoolClientLambdaRole": "nexttw94038c14_userpoolclient_lambda_role",
     "userpoolClientSetAttributes": false,
-    "sharedId": "0a2d4345",
-    "resourceName": "tailwindauth0a2d4345",
+    "sharedId": "94038c14",
+    "resourceName": "nexttwamped94038c14",
     "authSelections": "identityPoolAndUserPool",
     "authRoleArn": {
         "Fn::GetAtt": [
@@ -46,19 +46,18 @@
         ]
     },
     "useDefault": "defaultSocial",
+    "hostedUI": true,
     "usernameAttributes": [
         "email"
     ],
+    "hostedUIDomainName": "nexttwamped94038c14-94038c14",
+    "authProvidersUserPool": [
+        "Google"
+    ],
+    "hostedUIProviderMeta": "[{\"ProviderName\":\"Google\",\"authorize_scopes\":\"openid email profile\",\"AttributeMapping\":{\"email\":\"email\",\"username\":\"sub\"}}]",
+    "oAuthMetadata": "{\"AllowedOAuthFlows\":[\"code\"],\"AllowedOAuthScopes\":[\"phone\",\"email\",\"openid\",\"profile\",\"aws.cognito.signin.user.admin\"],\"CallbackURLs\":[\"http://localhost:3000/\"],\"LogoutURLs\":[\"http://localhost:3000/\"]}",
     "userPoolGroupList": [],
     "serviceName": "Cognito",
     "usernameCaseSensitive": false,
-    "dependsOn": [],
-    "hostedUI": true,
-    "hostedUIDomainName": "tailwindauth4cf825c5-4cf825c5",
-    "authProvidersUserPool": [
-        "Facebook",
-        "Google"
-    ],
-    "hostedUIProviderMeta": "[{\"ProviderName\":\"Facebook\",\"authorize_scopes\":\"email,public_profile\",\"AttributeMapping\":{\"email\":\"email\",\"username\":\"id\"}},{\"ProviderName\":\"Google\",\"authorize_scopes\":\"openid email profile\",\"AttributeMapping\":{\"email\":\"email\",\"username\":\"sub\"}}]",
-    "oAuthMetadata": "{\"AllowedOAuthFlows\":[\"code\"],\"AllowedOAuthScopes\":[\"phone\",\"email\",\"openid\",\"profile\",\"aws.cognito.signin.user.admin\"],\"CallbackURLs\":[\"http://localhost:3000/\"],\"LogoutURLs\":[\"http://localhost:3000/\"]}"
+    "dependsOn": []
 }
