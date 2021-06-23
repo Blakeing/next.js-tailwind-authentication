@@ -1,8 +1,8 @@
 {
-    "identityPoolName": "nexttwamped94038c14_identitypool_94038c14",
+    "identityPoolName": "nexttwampedf7287eff_identitypool_f7287eff",
     "allowUnauthenticatedIdentities": false,
-    "resourceNameTruncated": "nexttw94038c14",
-    "userPoolName": "nexttwamped94038c14_userpool_94038c14",
+    "resourceNameTruncated": "nexttwf7287eff",
+    "userPoolName": "nexttwampedf7287eff_userpool_f7287eff",
     "autoVerifiedAttributes": [
         "email"
     ],
@@ -28,10 +28,10 @@
     "userpoolClientReadAttributes": [
         "email"
     ],
-    "userpoolClientLambdaRole": "nexttw94038c14_userpoolclient_lambda_role",
+    "userpoolClientLambdaRole": "nexttwf7287eff_userpoolclient_lambda_role",
     "userpoolClientSetAttributes": false,
-    "sharedId": "94038c14",
-    "resourceName": "nexttwamped94038c14",
+    "sharedId": "f7287eff",
+    "resourceName": "nexttwampedf7287eff",
     "authSelections": "identityPoolAndUserPool",
     "authRoleArn": {
         "Fn::GetAtt": [
@@ -50,12 +50,12 @@
     "usernameAttributes": [
         "email"
     ],
-    "hostedUIDomainName": "nexttwamped94038c14-94038c14",
+    "hostedUIDomainName": "nexttwampedf7287eff-f7287eff",
     "authProvidersUserPool": [
         "Google"
     ],
     "hostedUIProviderMeta": "[{\"ProviderName\":\"Google\",\"authorize_scopes\":\"openid email profile\",\"AttributeMapping\":{\"email\":\"email\",\"username\":\"sub\"}}]",
-    "oAuthMetadata": "{\"AllowedOAuthFlows\":[\"code\"],\"AllowedOAuthScopes\":[\"phone\",\"email\",\"openid\",\"profile\",\"aws.cognito.signin.user.admin\"],\"CallbackURLs\":[\"http://localhost:3000/\"],\"LogoutURLs\":[\"http://localhost:3000/\"]}",
+    "oAuthMetadata": "{\"AllowedOAuthFlows\":[\"code\"],\"AllowedOAuthScopes\":[\"phone\",\"email\",\"openid\",\"profile\",\"aws.cognito.signin.user.admin\"],\"CallbackURLs\":[\"http://localhost:3000/\",\"https://main.dglnpqprxofv7.amplifyapp.com/\"],\"LogoutURLs\":[\"http://localhost:3000/\",\"https://main.dglnpqprxofv7.amplifyapp.com/\"]}",
     "userPoolGroupList": [],
     "serviceName": "Cognito",
     "usernameCaseSensitive": false,

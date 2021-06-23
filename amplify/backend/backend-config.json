@@ -1,6 +1,6 @@
 {
   "auth": {
-    "nexttwamped94038c14": {
+    "nexttwampedf7287eff": {
       "service": "Cognito",
       "providerPlugin": "awscloudformation",
       "dependsOn": [],
