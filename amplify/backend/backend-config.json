@@ -1,0 +1,10 @@
+{
+  "auth": {
+    "nexttwamped94038c14": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false
+    }
+  }
+}
