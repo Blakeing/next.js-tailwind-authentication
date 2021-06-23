@@ -23,7 +23,26 @@
         "s3TemplateURL": "https://s3.amazonaws.com/amplify-nexttwamped-dev-195918-deployment/amplify-cfn-templates/auth/nexttwampedf7287eff-cloudformation-template.yml",
         "logicalId": "authnexttwampedf7287eff"
       },
-      "lastPushTimeStamp": "2021-06-23T01:07:26.881Z"
+      "lastPushTimeStamp": "2021-06-23T01:10:31.348Z",
+      "output": {
+        "UserPoolId": "us-east-2_VHEvbhjcI",
+        "AppClientIDWeb": "7t428k4qck5jjjmb03m0rj5n20",
+        "AppClientID": "730hbtp2j830cggnkkdp1r0q9v",
+        "HostedUIDomain": "nexttwampedf7287eff-f7287eff-dev",
+        "IdentityPoolId": "us-east-2:d640a79e-38fc-4d48-a4be-56d0ee63f537",
+        "UserPoolArn": "arn:aws:cognito-idp:us-east-2:794916265443:userpool/us-east-2_VHEvbhjcI",
+        "IdentityPoolName": "nexttwampedf7287eff_identitypool_f7287eff__dev",
+        "OAuthMetadata": "{\"AllowedOAuthFlows\":[\"code\"],\"AllowedOAuthScopes\":[\"phone\",\"email\",\"openid\",\"profile\",\"aws.cognito.signin.user.admin\"],\"CallbackURLs\":[\"http://localhost:3000/\",\"https://main.dglnpqprxofv7.amplifyapp.com/\"],\"LogoutURLs\":[\"http://localhost:3000/\",\"https://main.dglnpqprxofv7.amplifyapp.com/\"]}",
+        "UserPoolName": "nexttwampedf7287eff_userpool_f7287eff"
+      },
+      "lastPushDirHash": "4vq+kQs94duUa4odGOy8eaI3qnw="
+    }
+  },
+  "hosting": {
+    "amplifyhosting": {
+      "service": "amplifyhosting",
+      "type": "cicd",
+      "lastPushTimeStamp": "2021-06-23T01:14:02.280Z"
     }
   }
 }
